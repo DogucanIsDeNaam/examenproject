@@ -1,6 +1,8 @@
 <?php
 session_start(); // Start de sessie
 
+include 'dbcon.php';
+
 // Controleer of de gebruiker is ingelogd
 if (!isset($_SESSION['user_id'])) {
     // Als de gebruiker niet is ingelogd, stuur dan door naar de loginpagina
@@ -17,7 +19,7 @@ if ($rol != 3) { // Alleen de directeur (rol 3) heeft toegang
     header("Location: index.php");
     exit;
 }
-include 'navbar.php';
+
 ?>
 
 <!DOCTYPE html>
