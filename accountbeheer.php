@@ -3,7 +3,7 @@ session_start(); // Start de sessie
 
 include 'dbcon.php';
 
-// Controleer of de gebruiker is ingelogd
+// Controleer of de gebruiker is ingelogds
 if (!isset($_SESSION['user_id'])) {
     // Als de gebruiker niet is ingelogd, stuur dan door naar de loginpagina
     header("Location: login.php");
