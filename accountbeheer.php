@@ -5,7 +5,7 @@ include 'dbcon.php';
 
 // Controleer of de gebruiker is ingelogds
 if (!isset($_SESSION['user_id'])) {
-    // Als de gebruiker niet is ingelogd, stuur dan door naar de loginpagina
+    // Als de gebruiker niet is isngelogd, stuur dan door naar de loginpagina
     header("Location: login.php");
     exit;
 }
